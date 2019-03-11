@@ -1,0 +1,4 @@
+---
+ - hosts: DevOps
+   roles:
+      - { role: roles/deploy_apache }

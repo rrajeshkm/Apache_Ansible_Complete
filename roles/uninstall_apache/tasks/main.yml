@@ -1,0 +1,4 @@
+---
+ - name: UnInstall a httpd pkging
+   yum: name=httpd state=absent
+

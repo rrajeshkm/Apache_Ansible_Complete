@@ -1,0 +1,8 @@
+---
+- name: Copy http configuration file roles-tasks-configure.yml
+  copy: src=files/httpd.original dest=/etc/httpd/conf/httpd.conf
+
+- name: Copy index.html file roles-tasks-configure.yml
+  copy: src=files/index.html dest=/var/www/html
+  notify:
+  - restart apache

@@ -1,0 +1,4 @@
+---
+- name: Start and Enable httpd service roles-tasks-service.yml
+  service: name=httpd state=restarted enabled=yes
+
