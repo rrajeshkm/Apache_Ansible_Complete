@@ -1,4 +1,4 @@
 ---
- - hosts: DevOps
+ - hosts: ansibleserver
    roles:
       - { role: roles/deploy_apache }
